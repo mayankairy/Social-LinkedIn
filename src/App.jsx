@@ -11,19 +11,21 @@ function App() {
   const [count, setCount] = useState(0)
 
   return <div>
-    <div>
-      <Topbar />
-    </div>
-    <hr></hr>
-    <div style={{display:"flex", marginRight:"250px", marginLeft:"250px"}}>
-      <div style={{flex:1, border:"1px solid black", minHeight:"100vh", marginRight:"4px"}}>
-        <LeftSideBar />
+    <div style={{backgroundColor:"#f9f2ed"}}>
+      <div style={{backgroundColor:"white",}}>
+        <Topbar />
       </div>
-      <div style={{flex:3, border:"1px solid black", minHeight:"100vh", marginRight:"4px"}}>
-        <Posts />
-      </div>
-      <div style={{flex:1, border:"1px solid black", minHeight:"100vh"}}>
-        <RightSideBar />
+      <hr></hr>
+      <div style={{display:"flex", marginRight:"480px", marginLeft:"480px", marginTop:"20px"}}>
+        <div style={{flex:1, border:"1px solid black", minWidth:"250px", marginRight:"24px"}}>
+          <LeftSideBar />
+        </div>
+        <div style={{flex:3,  minHeight:"100vh", minWidth:"500px", marginRight:"24px"}}>
+          <Posts />
+        </div>
+        <div style={{flex:1, border:"1px solid black", minWidth:"250px"}}>
+          <RightSideBar />
+        </div>  
       </div>
     </div>
   </div>
