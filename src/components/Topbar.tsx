@@ -9,7 +9,7 @@ export default function Topbar(){
         <div style={{display:"flex", justifyContent:"space-evenly"}}>
             <div style={{display:"flex", alignItems:"center"}}>
                 <LinkedIn />
-                <SearchBox icon={""} />
+                <SearchBox iconPresent={true} placeHolderText={"Search"} />
             </div>
 
             <div style={{display:"flex", justifyContent:"space-evenly" }}>

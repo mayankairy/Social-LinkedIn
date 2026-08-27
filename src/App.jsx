@@ -8,24 +8,25 @@ import RightSideBar from './components/RightSideBar.tsx'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return <div>
-    <div style={{backgroundColor:"#f9f2ed"}}>
+    <div style={{backgroundColor:"#fbe8db58"}}>
       <div style={{backgroundColor:"white",}}>
         <Topbar />
       </div>
       <hr></hr>
-      <div style={{display:"flex", marginRight:"480px", marginLeft:"480px", marginTop:"20px"}}>
-        <div style={{flex:1, border:"1px solid black", minWidth:"250px", marginRight:"24px"}}>
+
+      <div style={{display:"flex",margin:"15px 280px 10px 280px",}}>
+        <div style={{flex:1, flexBasis:"400px", marginRight:"24px"}}>
           <LeftSideBar />
         </div>
-        <div style={{flex:3,  minHeight:"100vh", minWidth:"500px", marginRight:"24px"}}>
+        <div style={{flex:3,  minHeight:"100vh", flexBasis:"1000px", marginRight:"24px"}}>
           <Posts />
         </div>
-        <div style={{flex:1, border:"1px solid black", minWidth:"250px"}}>
+        <div style={{flex:1, flexBasis:"400px",}}>
           <RightSideBar />
-        </div>  
+        </div>
       </div>
     </div>
   </div>
