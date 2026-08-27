@@ -1,0 +1,102 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+.TopBarElement{
+    padding-Right:10px;
+    padding:4px 4px 4px 4px; 
+    margin:4px 4px 4px 4px;
+    min-Width:5px;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom:2px solid transparent;
+    cursor:pointer;
+
+    /* for notification count to be at top-right */
+    position:relative;
+}
+
+.TopBarElement:hover{
+    /* : implies the effect is temporary */
+    color:black;
+}
+
+.TopBarElement:active{
+    color:black;
+    border-bottom:2px solid black;
+}
+
+.TopBarElement.active{
+    /* when user clicking a elment actively, need to be changed permanently, like background-color */
+    color:black;
+    border-bottom:2px solid black;
+}
+
+.Profile{
+    padding-Right:10px;
+    padding:4px 4px 4px 4px; 
+    margin:4px 4px 4px 4px;
+    color:rgba(0, 0, 0, 0.6);
+    border-bottom:2px solid transparent;
+    cursor:pointer
+}
+
+.Profile:hover{
+    color:black;
+}
+
+.Profile:active{
+    /* when user clicking a elment actively, need to be changed permanently, like background-color */
+    color:black;
+    border-bottom:2px solid black;
+}
+
+.Profile.active{
+    color:black;
+    border-bottom:2px solid black;
+}
+
+.Business{
+    padding-Right:10px;
+    padding:4px 4px 4px 4px; 
+    margin:4px 4px 4px 4px;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom:2px solid transparent;
+    cursor:pointer
+}
+
+.Business:hover{
+    color:black;
+}
+
+.Business:active{
+    /* when user clicking a elment actively, need to be changed permanently, like background-color */
+    color:black;
+    border-bottom:2px solid black;
+}
+
+.Business.active{
+    color:black;
+    border-bottom:2px solid black;
+}
+
+.NotifyCount{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:white;
+    border: 1px solid white;
+    color:black;
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    font-size:15px;
+    text-align:justify;  
+    /* can be center */
+}
+
+.NotifyCount.active{
+    background-color:red;
+    border: 1px solid black;
+}
