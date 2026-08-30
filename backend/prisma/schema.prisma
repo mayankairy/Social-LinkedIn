@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client"
   output   = "../generated/prisma"
@@ -11,11 +5,11 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  
 }
 
 model Post {
   id        String   @id @default(uuid())
   content   String
   createdAt DateTime @default(now())
+  photo     String   @default("https://thumbs.dreamstime.com/b/my-cat-her-silly-face-i-know-cringe-cute-m-sorry-311851899.jpg")
 }
