@@ -9,7 +9,7 @@ export interface IPost{
     premium:boolean;
     photo?:string;
     likeCount?:number;
-    updatedAt:Date;
+    updatedAt?:Date;
     //updatedAt:number
     commentCount?:number
 }
@@ -47,7 +47,7 @@ export default function Post(props:IPost){
         <div style={{display:"flex", justifyContent:"space-between", padding:"6px 6px 6px 6px",}}>
             <div style={{display:"flex", }}>
                 {/* user pfp and their biodata */}
-                <div style={{}}>
+                <div>
                     <img src={props.profilePicture} width={60} height={60} style={{borderRadius:"50%"}}/>
                 </div>
 
@@ -55,7 +55,7 @@ export default function Post(props:IPost){
                     <div> <span style={{fontSize:20, fontWeight:500}}>{props.name}</span> {props.premium && <img src={LPrem} width={10} height={10} />} </div>
                     <div style={{fontSize:15, fontWeight:300, color:"gray"}}> {props.description} </div>
                     <div style={{color:"blue", cursor:"pointer"}}>Visit my website</div>
-                    <div style={{color:"gray", fontSize:12}}>{getDisplayDate(Date.now() - new Date(props.updatedAt).getUTCMilliseconds())} </div> 
+                    <div style={{color:"gray", fontSize:12}}>{props.updatedAt != null ? getDisplayDate(Date.now() - new Date(props.updatedAt).getTime()) : null} </div> 
                     <div style={{color:"gray"}}> <Dot size={20} /> <Earth size={20} /> </div>
                 </div>
 

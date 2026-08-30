@@ -21,7 +21,7 @@ function App() {
         <div style={{flex:1, flexBasis:"400px", marginRight:"24px"}}>
           <LeftSideBar />
         </div>
-        <div style={{flex:3,  minHeight:"100vh", flexBasis:"1000px", marginRight:"24px"}}>
+        <div style={{flex:3,  minHeight:"100vh", flexBasis:"900px", marginRight:"24px"}}>
           <Posts />
         </div>
         <div style={{flex:1, flexBasis:"400px",}}>
